@@ -1,0 +1,134 @@
+.partner-card {
+  background: #FFFFFF;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 12px 56px 12px;
+  width: calc(25% - 24px);
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    //.hover-content {
+    //  opacity: 1;
+    //}
+
+  }
+
+  &.become-partner {
+    padding:0;
+    //border-radius: 24px;
+    .hover-content {
+      //position: absolute;
+      //top: 0;
+      //left: 0;
+      border-radius: 24px;
+      background: #101417;
+      padding: 40px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      //opacity: 0;
+      //transition: opacity 0.5s;
+
+      .hover-content-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        .hover-content-title {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+          color: #FFFFFF;
+          width: 100%;
+          text-align: center;
+          margin: 0 0 8px 0;
+        }
+
+        .regular-text {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.87);
+          width: 100%!important;
+          margin: 0!important;
+        }
+      }
+    }
+}
+
+
+
+  .partner-logo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .partner-logo {
+      max-height: 145px;
+    }
+  }
+
+  .partner-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101417;
+    text-align: center;
+    margin: 0 0 8px 0;
+    transition: 0.5s;
+  }
+
+  .partner-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(16, 20, 23, 0.68);
+    text-align: center;
+
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .partner-card {
+    width: 30%;
+    padding: 16px;
+    flex-shrink: 0;
+
+    .partner-logo-container {
+      .partner-logo {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .partner-card {
+    width: 60%;
+    padding: 16px;
+    flex-shrink: 0;
+
+    .partner-logo-container {
+      .partner-logo {
+        width: 100%;
+      }
+    }
+  }
+}

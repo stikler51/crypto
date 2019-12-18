@@ -1,0 +1,59 @@
+.team-card {
+  margin: 0 12px 56px 12px;
+  width: calc(25% - 24px);
+  //width: 24%;
+
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-right: 24px;
+    margin-bottom: 24px;
+  }
+
+  .team-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 8px 0;
+    color: #101417;
+    transition: 0.5s;
+  }
+
+  .regular-text {
+    font-family: 'Grotesk Anderson', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+    color: rgba(16, 20, 23, 0.68);
+  }
+}
+
+@media screen and(max-width: 991px) {
+  .team-card {
+    width: 40%;
+    .team-photo {
+      width: 35vw;
+    }
+
+    &:last-child {
+      padding-right: 24px;
+    }
+
+    &:first-child {
+      padding-left: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .team-card {
+    width: 100%;
+    .team-photo {
+      width: 80vw;
+    }
+  }
+}

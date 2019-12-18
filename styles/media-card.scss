@@ -1,0 +1,48 @@
+.media-card {
+  padding:24px;
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.07);
+  border-radius: 24px;
+  margin: 0 12px;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 400px!important;
+  position: relative;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+  }
+
+  .media-card-header {
+    z-index: 15;
+    .card-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 32px;
+      color: #101417;
+      margin: 0 0 16px 0;
+    }
+
+    .card-date {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(16, 20, 23, 0.68);
+      margin: 0;
+    }
+  }
+
+  .media-card-logo-container {
+    z-index: 15;
+  }
+
+  .media-card-logo {
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+  }
+}

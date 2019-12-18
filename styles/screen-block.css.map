@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACN,MAAM,EAAE,KAAK;EACb,oBAAe;IACb,UAAU,EAAE,IAAI;EAGlB,oBAAe;IACb,UAAU,EAAE,IAAI",
+"sources": ["screen-block.scss"],
+"names": [],
+"file": "screen-block.css"
+}

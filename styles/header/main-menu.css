@@ -1,0 +1,18 @@
+.main-menu ul {
+  padding: 0;
+  display: flex; }
+  .main-menu ul li {
+    list-style: none; }
+    .main-menu ul li a {
+      padding: 10px 32px;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+      text-transform: capitalize;
+      /* Light Theme/Primary/400 */
+      color: rgba(16, 20, 23, 0.68); }
+
+/*# sourceMappingURL=main-menu.css.map */

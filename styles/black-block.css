@@ -1,0 +1,32 @@
+.black-block {
+  padding: 112px 0;
+  background: #101417 url("../images/black-block-bg.svg") no-repeat center;
+  background-size: contain; }
+  .black-block .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .black-block .container .block-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 64px;
+      color: #FFFFFF;
+      text-align: center;
+      max-width: 50%;
+      margin: 0 0 24px 0; }
+    .black-block .container .regular-text {
+      font-family: 'Grotesk Anderson', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.68);
+      margin: 0 0 56px 0; }
+    .black-block .container .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+/*# sourceMappingURL=black-block.css.map */

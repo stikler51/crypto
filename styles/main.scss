@@ -1,0 +1,288 @@
+@import "header/header.scss";
+@import "header/logo";
+@import "header/main-menu";
+@import "buttons";
+@import "screen-block";
+@import "customer-card";
+@import "sliders";
+@import "advantage";
+@import "badge";
+@import "team-card";
+@import "become-patner-block";
+@import "footer";
+@import "event";
+@import "tabs";
+@import "media-card";
+@import "black-block";
+@import "wallet";
+@import "form";
+@import "partner-card";
+
+@import "fonts/fonts.css";
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'hk_grotesk', sans-serif;
+  font-weight: normal;
+  overflow-x: hidden;
+
+  &.dark-theme {
+    .screen {
+      background-color: #101417;
+
+      .screen-title {
+        color: white;
+      }
+
+      .screen-title {
+        color: white;
+      }
+
+      .event-title {
+        color: white!important;
+      }
+
+      .event-date {
+        color: rgba(255, 255, 255, 0.68) !important;
+      }
+
+      .regular-text {
+        color: rgba(255, 255, 255, 0.68);
+      }
+
+      .addition-text {
+        color: white;
+      }
+
+      .team-name {
+        color: white;
+      }
+    }
+
+    .black-block {
+      //background: #101417 url("../images/black-block-bg.svg") no-repeat center;
+      background-color: #101417!important;
+
+      .block-title {
+        color: white!important;
+      }
+
+      .regular-text {
+        color: rgba(255, 255, 255, 0.68);
+      }
+    }
+
+
+    .header {
+      background-color: #0C0F11;
+
+      .main-menu {
+        ul {
+          li {
+            a {
+              color: rgba(255, 255, 255, 0.68);
+              transition: 0.3s;
+              &:hover {
+                color: #0057FF;
+              }
+            }
+
+            &:nth-child(2) {
+              border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .white-btn a {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: white;
+      transition: 0.3s;
+
+      &:hover {
+        border-color: #0057FF;
+      }
+    }
+
+    .mobile-menu-btn {
+      background: #1c1c1c;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+
+      i {
+        color: white;
+      }
+    }
+
+    .lang {
+      background: #1c1c1c;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      a {
+        color: white;
+      }
+    }
+
+    .contact-mail {
+      .description {
+        color: white!important;
+        transition: 0.3s;
+      }
+
+      .mail {
+        color: rgba(255, 255, 255, 0.87) !important;
+        transition: 0.3s;
+
+        &:hover {
+          color: #0057FF;
+        }
+      }
+    }
+
+    .partner-card {
+      background: #101417;
+      box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.07);
+
+      .partner-name {
+        color: white;
+      }
+
+      .partner-link {
+        color: white;
+      }
+    }
+
+  }
+
+  .regular-text {
+    font-family: 'Grotesk Anderson', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(16, 20, 23, 0.68);
+    margin: 0;
+    transition: color 0.5s;
+  }
+
+  .explanation-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 64px;
+    margin-top: 40px;
+    color: #0057FF;
+  }
+
+  .addition-text {
+    font-family: 'Grotesk Anderson', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #101417;
+    margin: 32px 0 0 0;
+    position: relative;
+    padding-left: 24px;
+    transition: color 0.5s;
+
+    &:first-child {
+      margin: 16px 0 0 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      background: url("../images/add-text.svg") no-repeat center;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      top:0;
+    }
+  }
+
+  .subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin: 80px 0 0 0;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  .sponsors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .sponsors-container {
+    img {
+      width: 100px;
+      margin-right: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .container {
+    padding: 0 24px;
+  }
+
+  .dark-theme {
+    .header {
+      .main-menu {
+        background: #0C0F11;
+
+        ul {
+          li:nth-child(2) {
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .sponsors-container {
+    display: none;
+
+    &.visible-in-mob {
+      display: block;
+      padding: 0;
+      .sponsors {
+        overflow-x: scroll;
+        margin-top: 40px!important;
+
+        img {
+          margin: 0 24px;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 24px;
+          height: 100%;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.badge {
+  padding: 24px;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 24px;
+  display: inline-block;
+
+  .badge-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #101417;
+    text-align: center;
+    margin: 0 0 8px 0;
+  }
+
+  .regular-text {
+    font-family: 'Grotesk Anderson', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(16, 20, 23, 0.68);
+    margin: 0;
+  }
+
+  &:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 20px 25px rgba(0, 0, 23, 0.16), 0px 10px 10px rgba(0, 0, 0, 0.04);
+  }
+
+  &:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+  }
+
+  &:nth-child(3) {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+  }
+
+  &:nth-child(4) {
+    position: absolute;
+    right: 0;
+    top: -10%;
+    box-shadow: 0px 20px 25px rgba(0, 0, 23, 0.16), 0px 10px 10px rgba(0, 0, 0, 0.04);
+  }
+
+  &:nth-child(5) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 20px 25px rgba(0, 0, 23, 0.16), 0px 10px 10px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .badge {
+    position: unset!important;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07)!important;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(5){
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+      margin-right: 16px;
+    }
+
+    &:nth-child(3) {
+      width: calc(58% - 16px);
+      flex-grow: 1;
+    }
+  }
+}

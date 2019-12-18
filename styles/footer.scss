@@ -1,0 +1,272 @@
+.footer {
+  background: #0C0F11;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap:wrap;
+    padding-top: 54px;
+    padding-bottom: 41px;
+    .about-company {
+      width: 300px;
+      img {
+        width: 246px;
+        height: auto;
+      }
+
+      .regular-text {
+        margin: 40px 0 0 0;
+        font-family: 'Grotesk Anderson', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.68);
+      }
+
+      .app-buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 30px;
+
+        .white-btn {
+
+          &:first-child {
+            margin: 0 24px 0 0;
+          }
+
+          a {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.12);
+            //padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 56px;
+            height: 56px;
+
+            i {
+              font-size: 24px;
+              color: rgba(255, 255, 255, 0.12);
+              transition: 0.3s;
+            }
+          }
+
+          &:hover {
+            a {
+              border-color: rgba(255, 255, 255, 0.7);
+
+              i {
+                color: rgba(255, 255, 255, 0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menus-and-contacts {
+      margin-left: 24px;
+      width: calc(100% - 324px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      .menu-region {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .footer-menu {
+          ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+              margin-bottom: 24px;
+              a {
+                font-family: 'hk_grotesk', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                text-decoration: none;
+                transition: 0.3s;
+
+                &:hover {
+                  color: #0057FF;
+                }
+              }
+
+              &:first-child {
+                a {
+                  font-weight: 900;
+                }
+              }
+            }
+          }
+        }
+
+        .follow-us {
+          font-family: 'hk_grotesk', sans-serif;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: #FFFFFF;
+          text-decoration: none;
+          transition: 0.3s;
+          flex-shrink: 0;
+          //white-space: nowrap;
+        }
+
+        .social-btns {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 120px;
+          .soc-btn {
+            margin-right: 18px;
+            margin-bottom: 24px;
+            i {
+              color: rgba(255,255,255,0.4);
+              font-size: 24px;
+              transition: 0.3s;
+            }
+
+            &:hover {
+              i {
+                color: rgba(255,255,255,0.7);
+              }
+
+            }
+          }
+          &::after {
+            content: "";
+            flex: auto;
+          }
+        }
+      }
+
+      .contact-mails {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+        .contact-mail {
+          .description {
+            font-family: 'Grotesk Anderson', sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin: 0;
+          }
+
+          .mail {
+            font-family: 'Grotesk Anderson', sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px;
+            color: rgba(255, 255, 255, 0.87);
+            margin: 0;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+              color: #0057FF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    .container {
+      padding-top: 0;
+      .about-company {
+        width: 100%;
+        margin-bottom: 22px;
+
+        .logo {
+          display: none;
+        }
+
+        .app-buttons {
+          .white-btn {
+            width: calc(50% - 9px);
+
+            a {
+              width: 100%;
+            }
+            &:first-child {
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+
+      .menus-and-contacts {
+        width: 100%;
+        margin-left: 0;
+
+        .regular-text {
+          margin: 40px 0 0 0;
+          font-family: 'Grotesk Anderson', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: rgba(255, 255, 255, 0.68);
+        }
+
+        .menu-region {
+          .footer-menu {
+            width: 40%;
+
+          }
+
+          .follow-us-block {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin: 20px 0 40px 0;
+
+            .follow-us {
+              margin: 0;
+            }
+
+            .social-btns {
+              width: 100%;
+              margin-left: 24px;
+
+              .soc-btn {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .contact-mails {
+        .contact-mail {
+          margin-bottom: 24px;
+        }
+      }
+
+    }
+  }
+}

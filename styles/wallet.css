@@ -1,0 +1,15 @@
+.wallet-screen.fixed-screen {
+  position: fixed;
+  top: 0;
+  right: 0; }
+.wallet-screen .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .wallet-screen .container .wallet-screen-description {
+    width: 50%;
+    padding-right: 40px; }
+  .wallet-screen .container .wallet-screen-img {
+    width: 50%; }
+
+/*# sourceMappingURL=wallet.css.map */

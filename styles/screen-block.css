@@ -1,0 +1,8 @@
+.screen {
+  height: 100vh; }
+  .screen:nth-child(1) {
+    background: gray; }
+  .screen:nth-child(2) {
+    background: blue; }
+
+/*# sourceMappingURL=screen-block.css.map */

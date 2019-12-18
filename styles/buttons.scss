@@ -1,0 +1,123 @@
+.blue-btn {
+  margin: 0 8px;
+
+  a {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    border: 1px solid #0057FF;
+    text-decoration: none;
+    background: #0057FF;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  &:hover {
+    a {
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 87, 255, 0.12), 0px 16px 24px rgba(0, 87, 255, 0.2);
+    }
+  }
+}
+
+.white-btn {
+  margin: 0 8px;
+
+  a {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(16, 20, 23, 0.68);
+    padding: 16px 24px;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid rgba(16, 20, 23, 0.06);
+    box-sizing: border-box;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  &:hover {
+    a {
+      color: #0057FF;
+      border-color: #0057FF;
+    }
+  }
+}
+
+.mobile-menu-btn {
+  border: 1px solid rgba(16, 20, 23, 0.06);
+  border-radius: 8px;
+  display: flex;
+  //flex-direction: column;
+  //position: absolute;
+  //align-self: baseline;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  transition: 0.3s;
+  background: white;
+  width: 48px;
+  height: 48px;
+}
+
+.lang {
+  border: 1px solid rgba(16, 20, 23, 0.06);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-self: baseline;
+  right: 0;
+  transition: 0.3s;
+  background: white;
+  //display: block;
+  //visibility: visible;
+
+  a {
+    padding: 12px 16px;
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #101417;
+    text-decoration: none;
+    background: transparent;
+    transition: 0.3s;
+
+    &.active-lang {
+      display: block;
+    }
+  }
+
+  &:hover {
+    //border-color: #0057FF;
+    box-shadow: 0px 20px 25px rgba(0, 0, 23, 0.16), 0px 10px 10px rgba(0, 0, 0, 0.04);
+    a {
+      display: block;
+
+      &:hover {
+        color: #0057FF;
+      }
+    }
+  }
+
+  &.opened {
+  box-shadow: 0px 20px 25px rgba(0, 0, 23, 0.16), 0px 10px 10px rgba(0, 0, 0, 0.04);
+  a {
+    display: block;
+
+    &:hover {
+      color: #0057FF;
+    }
+  }
+}
+}

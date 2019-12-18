@@ -1,0 +1,27 @@
+.partner-card {
+  background: #FFFFFF;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+  .partner-card .partner-logo {
+    max-height: 145px; }
+  .partner-card .partner-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101417;
+    text-align: center;
+    margin: 0 0 8px 0; }
+  .partner-card .partner-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(16, 20, 23, 0.68);
+    text-align: center; }
+
+/*# sourceMappingURL=partner-card.css.map */

@@ -1,0 +1,25 @@
+.advantage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .advantage .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    width: 96px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 24px;
+    margin-right: 40px; }
+    .advantage .icon img {
+      width: 48px;
+      height: 48px; }
+    .advantage .icon .advantage-info .advantage-title {
+      font-family: hk_grotesk, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      color: #101417; }
+
+/*# sourceMappingURL=advantage.css.map */

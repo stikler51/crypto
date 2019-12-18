@@ -1,0 +1,22 @@
+.footer {
+  background: #0C0F11; }
+  .footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .footer .container .about-company {
+      max-width: 300px; }
+      .footer .container .about-company img {
+        width: 246px;
+        height: auto; }
+      .footer .container .about-company .regular-text {
+        margin: 40px 0 0 0;
+        font-family: 'Grotesk Anderson', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.68); }
+
+/*# sourceMappingURL=footer.css.map */
