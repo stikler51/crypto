@@ -3,13 +3,12 @@ window.addEventListener('load', () => {
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
     fixedScreen();
+    iconAnimation();
   } else {
     mobileMenu();
     rebuildWalletBlocks();
     rebuildFooter();
   }
-
-  iconAnimation();
 
   cursorEffect();
 

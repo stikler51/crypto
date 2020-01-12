@@ -572,6 +572,10 @@
         //background-position: 80% bottom;
         background: url("../images/intro-mob.png") no-repeat top;
         background-size: cover;
+
+        .ic {
+          display: none;
+        }
         .content {
           .main-title {
             font-size: 40px;
