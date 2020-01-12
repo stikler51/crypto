@@ -9,6 +9,8 @@ window.addEventListener('load', () => {
     rebuildFooter();
   }
 
+  iconAnimation();
+
   cursorEffect();
 
   fixPartnersCardHeight();
@@ -412,6 +414,51 @@ function rebuildWalletBlocks() {
     let images = block.querySelector('.wallet-screen-img');
     block.querySelector('.wallet-screen-description').insertBefore(images, block.querySelector('.addition-text'));
   })
+}
+
+function iconAnimation() {
+  let w1 = document.body.querySelectorAll('.w1');
+  let w2 = document.body.querySelectorAll('.w2');
+  let w3 = document.body.querySelectorAll('.w3');
+  setInterval(() => {
+    w1.forEach(icon => {
+      icon.classList.toggle('up');
+
+      if (icon.classList.contains('up')) {
+        icon.style.top = `${icon.offsetTop - 8}px`;
+      } else {
+        icon.style.top = `${icon.offsetTop + 8}px`;
+      }
+
+    })
+  }, 1000);
+
+  setInterval(() => {
+    w2.forEach(icon => {
+      icon.classList.toggle('up');
+
+      if (icon.classList.contains('up')) {
+        icon.style.top = `${icon.offsetTop - 8}px`;
+      } else {
+        icon.style.top = `${icon.offsetTop + 8}px`;
+      }
+
+    })
+  }, 1500);
+
+  setTimeout(() => {
+    setInterval(() => {
+      w3.forEach(icon => {
+        icon.classList.toggle('up');
+
+        if (icon.classList.contains('up')) {
+          icon.style.top = `${icon.offsetTop - 8}px`;
+        } else {
+          icon.style.top = `${icon.offsetTop + 8}px`;
+        }
+      })
+    }, 1000);
+  }, 500)
 }
 
 

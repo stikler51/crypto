@@ -34,11 +34,98 @@
 
   &.intro {
     .container {
-      background: url("../images/intro.png") no-repeat center top;
+      //background: url("../images/intro.png") no-repeat center top;
       background-size: contain;
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      position: relative;
+
+      .ic {
+        position: absolute;
+        filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.1));
+        transition: 0.7s;
+
+        &.up {
+          filter: drop-shadow(0px 20px 13px rgba(0, 0, 23, 0.26));
+        }
+
+        &.ic-1 {
+          left: 314px;
+          top: 15px;
+          transform: rotate(-30deg);
+        }
+
+        &.ic-2 {
+          left: 229px;
+          top: 110px;
+        }
+
+        &.ic-3 {
+          left: 145px;
+          top: 195px;
+        }
+
+        &.ic-4 {
+          left: 260px;
+          top: 245px;
+        }
+
+        &.ic-5 {
+          left: 325px;
+          top: 335px;
+        }
+
+        &.ic-6 {
+          left: 175px;
+          top: 350px;
+        }
+
+        &.ic-7 {
+          left: 375px;
+          top: 450px;
+        }
+
+        &.ic-8 {
+          top: 535px;
+          left: 290px;
+        }
+
+        &.ic-9 {
+          right: 325px;
+          transform: rotate(60deg);
+        }
+
+        &.ic-10 {
+          top: 110px;
+          right: 205px;
+        }
+
+        &.ic-11 {
+          top: 190px;
+          right: 300px;
+        }
+
+        &.ic-12 {
+          right: 285px;
+          top: 295px;
+        }
+
+        &.ic-13 {
+          right: 185px;
+          top: 315px;
+        }
+
+        &.ic-14 {
+          right: 140px;
+          top: 450px;
+        }
+
+        &.ic-15 {
+          right: 340px;
+          top: 510px;
+        }
+      }
 
       .content {
         max-width: 740px;

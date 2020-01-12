@@ -206,11 +206,63 @@
     .screen .screen-title .remark {
       color: #0057FF; }
   .screen.intro .container {
-    background: url("../images/intro.png") no-repeat center top;
     background-size: contain;
     display: flex;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    position: relative; }
+    .screen.intro .container .ic {
+      position: absolute;
+      filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.1));
+      transition: 0.7s; }
+      .screen.intro .container .ic.up {
+        filter: drop-shadow(0px 20px 13px rgba(0, 0, 23, 0.26)); }
+      .screen.intro .container .ic.ic-1 {
+        left: 314px;
+        top: 15px;
+        transform: rotate(-30deg); }
+      .screen.intro .container .ic.ic-2 {
+        left: 229px;
+        top: 110px; }
+      .screen.intro .container .ic.ic-3 {
+        left: 145px;
+        top: 195px; }
+      .screen.intro .container .ic.ic-4 {
+        left: 260px;
+        top: 245px; }
+      .screen.intro .container .ic.ic-5 {
+        left: 325px;
+        top: 335px; }
+      .screen.intro .container .ic.ic-6 {
+        left: 175px;
+        top: 350px; }
+      .screen.intro .container .ic.ic-7 {
+        left: 375px;
+        top: 450px; }
+      .screen.intro .container .ic.ic-8 {
+        top: 535px;
+        left: 290px; }
+      .screen.intro .container .ic.ic-9 {
+        right: 325px;
+        transform: rotate(60deg); }
+      .screen.intro .container .ic.ic-10 {
+        top: 110px;
+        right: 205px; }
+      .screen.intro .container .ic.ic-11 {
+        top: 190px;
+        right: 300px; }
+      .screen.intro .container .ic.ic-12 {
+        right: 285px;
+        top: 295px; }
+      .screen.intro .container .ic.ic-13 {
+        right: 185px;
+        top: 315px; }
+      .screen.intro .container .ic.ic-14 {
+        right: 140px;
+        top: 450px; }
+      .screen.intro .container .ic.ic-15 {
+        right: 340px;
+        top: 510px; }
     .screen.intro .container .content {
       max-width: 740px;
       width: 100%;
