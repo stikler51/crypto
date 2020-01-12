@@ -1761,7 +1761,10 @@
     line-height: 16px;
     color: rgba(16, 20, 23, 0.68);
     text-align: center;
-    transition: 0.5s; }
+    transition: 0.3s;
+    text-decoration: none; }
+    .partner-card .partner-link:hover {
+      color: #0057FF; }
 
 @media screen and (max-width: 1366px) {
   .partner-card {
