@@ -421,7 +421,7 @@ $('.customers-slider').slick({
   dots: false,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
+  slidesToShow: 2,
   slidesToScroll: 1,
   prevArrow: $('.customers-about-us .custom-prev-arrow.customers-slider-arrow'),
   nextArrow: $('.customers-about-us .custom-next-arrow.customers-slider-arrow'),
@@ -429,7 +429,7 @@ $('.customers-slider').slick({
     {
       breakpoint: 1367,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
       }
     },

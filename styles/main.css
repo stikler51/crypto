@@ -222,8 +222,8 @@
       .screen.intro .container .content .main-title {
         font-style: normal;
         font-weight: bold;
-        font-size: 64px;
-        line-height: 80px;
+        font-size: 48px;
+        line-height: 64px;
         text-align: center;
         color: #101417;
         margin: 0 0 40px 0; }
@@ -1847,7 +1847,7 @@ body {
   .container .sponsors {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 0; }
 
 @media screen and (max-width: 1300px) {
