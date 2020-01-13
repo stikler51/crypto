@@ -53,7 +53,7 @@
         &.ic-1 {
           left: 22%;
           top: 3%;
-          transform: rotate(-30deg);
+          //transform: rotate(-30deg);
         }
 
         &.ic-2 {
@@ -93,7 +93,7 @@
 
         &.ic-9 {
           right: 22%;
-          transform: rotate(60deg);
+          //transform: rotate(60deg);
         }
 
         &.ic-10 {
@@ -102,8 +102,8 @@
         }
 
         &.ic-11 {
-          top: 31%;
-          right: 21%;
+          top: 33%;
+          right: 18%;
         }
 
         &.ic-12 {
@@ -545,6 +545,22 @@
 
       .custom-slider-arrows {
         visibility: hidden;
+      }
+    }
+  }
+
+  &.become-client-page {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form-title {
+        text-align: center;
+      }
+
+      .regular-text {
+        text-align: center;
       }
     }
   }

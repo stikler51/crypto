@@ -3,4 +3,24 @@
     text-decoration: none;
     display: block;
   }
+  .logo-desctop {
+    display: block;
+  }
+  
+  .logo-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    .logo-mobile {
+      display: block;
+    }
+
+    .logo-desctop {
+      display: none;
+    }
+  }
+  
 }

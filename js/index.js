@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
     setScreensBlocksHigh();
     fixedScreen();
     iconAnimation();
+    setTeamCardHeight();
   } else {
     mobileMenu();
     rebuildWalletBlocks();
@@ -20,11 +21,11 @@ window.addEventListener('load', () => {
 
   darkTheme();
 
-
 });
 
 function darkTheme() {
   let darkBlocks = document.body.querySelectorAll('.dark');
+  let logo = document.body.querySelector('.logo img');
   let screenHeight = window.innerHeight;
 
   if (!darkBlocks.length) {
@@ -47,6 +48,7 @@ function darkTheme() {
   darkBlocksTop.forEach((val, ind) => {
     if ((window.pageYOffset > val - screenHeight / 2) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2)) {
       document.body.classList.add('dark-theme');
+      logo.setAttribute('src', 'images/logo-dark.svg');
     }
   });
 
@@ -57,6 +59,7 @@ function darkTheme() {
 
     if (window.pageYOffset < darkBlocksTop[i] - screenHeight / 2) {
       document.body.classList.remove('dark-theme');
+      logo.setAttribute('src', 'images/logo.svg');
 
       if (i > 0) {
         i--;
@@ -64,8 +67,10 @@ function darkTheme() {
 
     } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / 2) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / 2)) {
       document.body.classList.add('dark-theme');
+      logo.setAttribute('src', 'images/logo-dark.svg')
     } else {
       document.body.classList.remove('dark-theme');
+      logo.setAttribute('src', 'images/logo.svg');
 
       if (i < darkBlocksTop.length) {
         i++;
@@ -83,6 +88,19 @@ function fixPartnersCardHeight() {
       console.log(card.offsetWidth);
       card.style.height = `${card.offsetWidth}px`;
     })
+  }
+}
+
+function setTeamCardHeight() {
+  let cards = document.body.querySelectorAll('.team-card');
+
+  if (cards.length) {
+    let cardHeight = cards[0].offsetHeight;
+    let newHeight = cardHeight - 48;
+
+    cards.forEach(card => {
+      card.style.height = `${newHeight}px`;
+    });
   }
 }
 
@@ -152,11 +170,11 @@ function tabs() {
   }
 
   function toggleTab(node, index) {
-
-    if (index == allTabs.length - 1) {
+    // index--;
+    if (index === allTabs.length - 1) {
       document.body.querySelector('.tabs-and-arrows .custom-slider-arrows .custom-next-arrow').classList.add('slick-disabled');
       document.body.querySelector('.tabs-and-arrows .custom-slider-arrows .custom-prev-arrow').classList.remove('slick-disabled');
-    } else if (index == 0) {
+    } else if (index === 0) {
       document.body.querySelector('.tabs-and-arrows .custom-slider-arrows .custom-prev-arrow').classList.add('slick-disabled');
       document.body.querySelector('.tabs-and-arrows .custom-slider-arrows .custom-next-arrow').classList.remove('slick-disabled');
     } else {
@@ -173,10 +191,8 @@ function tabs() {
     newTab.classList.toggle('active');
 
     let partnersCards = document.body.querySelectorAll('.active .partner-card');
-    console.log(partnersCards);
     if(partnersCards.length) {
       partnersCards.forEach(card => {
-        console.log(card.offsetWidth);
         card.style.height = `${card.offsetWidth}px`;
       })
     }
@@ -231,8 +247,6 @@ function mobileMenu() {
   }
 }
 
-
-
 function setScreensBlocksHigh() {
   // let screenHeight = window.innerHeight;
   // let screenBlocks = document.body.querySelectorAll('.intro, .wallet-screen, .about-us-screen, .become-partner-page');
@@ -259,7 +273,7 @@ function cursorEffect() {
     return;
   }
 
-  let values = ['iGaming', 'eGaming', 'eSports', 'Streaming', 'eCommerce', 'PSP'];
+  let values = ['iGaming', 'eSports', 'Streaming', 'eCommerce', 'PSP'];
 
   setInterval(() => {
     cursorEl.classList.toggle('cursor');

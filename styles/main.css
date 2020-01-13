@@ -53,7 +53,16 @@
 .logo a {
   text-decoration: none;
   display: block; }
+.logo .logo-desctop {
+  display: block; }
+.logo .logo-mobile {
+  display: none; }
 
+@media screen and (max-width: 991px) {
+  .logo .logo-mobile {
+    display: block; }
+  .logo .logo-desctop {
+    display: none; } }
 .main-menu ul {
   padding: 0;
   display: flex; }
@@ -219,8 +228,7 @@
         filter: drop-shadow(0px 20px 13px rgba(0, 0, 23, 0.26)); }
       .screen.intro .container .ic.ic-1 {
         left: 22%;
-        top: 3%;
-        transform: rotate(-30deg); }
+        top: 3%; }
       .screen.intro .container .ic.ic-2 {
         left: 16%;
         top: 19%; }
@@ -243,14 +251,13 @@
         top: 90%;
         left: 20%; }
       .screen.intro .container .ic.ic-9 {
-        right: 22%;
-        transform: rotate(60deg); }
+        right: 22%; }
       .screen.intro .container .ic.ic-10 {
         top: 19%;
         right: 14%; }
       .screen.intro .container .ic.ic-11 {
-        top: 31%;
-        right: 21%; }
+        top: 33%;
+        right: 18%; }
       .screen.intro .container .ic.ic-12 {
         right: 20%;
         top: 50%; }
@@ -519,6 +526,14 @@
       flex: auto; }
   .screen.partners .container .custom-slider-arrows {
     visibility: hidden; }
+  .screen.become-client-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .screen.become-client-page .container .form-title {
+      text-align: center; }
+    .screen.become-client-page .container .regular-text {
+      text-align: center; }
 
 @media screen and (max-width: 991px) {
   .screen {
@@ -732,12 +747,16 @@
   background: #FFFFFF;
   box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.07);
   border-radius: 24px;
-  margin: 0 12px; }
+  margin: 0 12px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
   .customer-card .card-header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 32px; }
+    margin-bottom: 24px; }
     .customer-card .card-header .customer-photo {
       border-radius: 50%;
       width: 64px;
@@ -746,10 +765,10 @@
       flex-shrink: 0; }
     .customer-card .card-header .customer-info .customer-name {
       font-weight: bold;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 24px;
+      line-height: 48px;
       color: #101417;
-      margin: 0 0 8px 0; }
+      margin: 0; }
     .customer-card .card-header .customer-info .customer-job-title {
       font-family: 'hk_grotesk', sans-serif;
       font-style: normal;
@@ -810,6 +829,11 @@
 
 .customers-slider {
   margin-top: 56px; }
+  .customers-slider .slick-track {
+    display: flex;
+    align-items: stretch; }
+    .customers-slider .slick-track .slick-slide {
+      height: unset; }
 
 .media-slider {
   margin-top: 64px; }
@@ -934,12 +958,33 @@
       flex-grow: 1; } }
 .team-card {
   margin: 0 12px 56px 12px;
-  width: calc(25% - 24px); }
-  .team-card .team-photo {
+  width: calc(25% - 24px);
+  overflow-y: hidden; }
+  .team-card:hover .photo-container:before {
+    padding-top: 80%; }
+  .team-card:hover .photo-container .team-photo {
+    top: -10%; }
+  .team-card .photo-container {
     width: 100%;
-    height: auto;
+    position: relative;
     border-right: 24px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    border-radius: 24px;
+    overflow-y: hidden; }
+    .team-card .photo-container:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+      /* initial ratio of 1:1*/
+      transition: 0.3s; }
+    .team-card .photo-container .team-photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      transition: 0.3s; }
   .team-card .team-name {
     font-style: normal;
     font-weight: bold;
@@ -957,6 +1002,16 @@
     text-transform: capitalize;
     margin: 0;
     color: rgba(16, 20, 23, 0.68); }
+  .team-card .social-btns {
+    margin-top: 16px; }
+    .team-card .social-btns .soc-btn {
+      margin-right: 16px; }
+      .team-card .social-btns .soc-btn i {
+        font-size: 32px;
+        color: #C4C4C4;
+        transition: 0.3s; }
+        .team-card .social-btns .soc-btn i:hover {
+          color: #0057FF; }
 
 @media screen and (max-width: 991px) {
   .team-card {
@@ -1193,9 +1248,14 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
-    color: #101417;
     margin: 0 0 8px 0;
     transition: 0.5s; }
+    .event .event-header .event-title-and-date .event-title a {
+      text-decoration: none;
+      color: #101417;
+      transition: 0.3s; }
+      .event .event-header .event-title-and-date .event-title a:hover {
+        color: #0057FF; }
   .event .event-header .event-title-and-date .event-date {
     font-weight: 500;
     font-size: 16px;
@@ -1343,7 +1403,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 400px !important;
+  height: 250px !important;
   position: relative;
   transition: 0.3s; }
   .media-card:hover {
@@ -1356,8 +1416,13 @@
       font-weight: bold;
       font-size: 18px;
       line-height: 32px;
-      color: #101417;
       margin: 0 0 16px 0; }
+      .media-card .media-card-header .card-title a {
+        text-decoration: none;
+        color: #101417;
+        transition: 0.3s; }
+        .media-card .media-card-header .card-title a:hover {
+          color: #0057FF; }
     .media-card .media-card-header .card-date {
       font-weight: 500;
       font-size: 12px;
@@ -1365,7 +1430,8 @@
       color: rgba(16, 20, 23, 0.68);
       margin: 0; }
   .media-card .media-card-logo-container {
-    z-index: 15; }
+    z-index: 15;
+    width: 100%; }
   .media-card .media-card-logo {
     width: 50%;
     height: auto;

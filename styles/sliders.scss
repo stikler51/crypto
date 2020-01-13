@@ -5,6 +5,7 @@
   .slick-slide {
     outline: none;
     margin: 0 12px 0 12px;
+    //height: unset;
   }
 
 }
@@ -55,6 +56,15 @@
 
 .customers-slider {
   margin-top: 56px;
+
+  .slick-track {
+    display: flex;
+    align-items: stretch;
+
+    .slick-slide {
+      height: unset;
+    }
+  }
 }
 
 .media-slider {
