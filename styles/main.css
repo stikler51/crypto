@@ -221,7 +221,6 @@
     align-items: flex-start;
     position: relative; }
     .screen.intro .container .ic {
-      display: none;
       position: absolute;
       filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.1));
       transition: 0.7s; }
@@ -1737,7 +1736,7 @@
     border: 1px solid rgba(255, 255, 255, 0.06);
     box-sizing: border-box;
     border-radius: 8px;
-    padding: 12px 16px;
+    padding: 19px 16px;
     width: 100%;
     margin-bottom: 24px;
     color: white;

@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
     fixedScreen();
-    // iconAnimation();
+    iconAnimation();
     setTeamCardHeight();
   } else {
     mobileMenu();
