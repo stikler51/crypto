@@ -230,6 +230,23 @@ body {
   }
 }
 
+.parallax-mirror {
+  z-index: unset!important;
+  height: calc(100vh - 128px) !important;
+  padding-top: 128px;
+  max-width: 1440px;
+  width: 100%!important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  img {
+    height: calc(100vh - 128px) !important;
+    width: unset!important;
+  }
+
+}
+
 @media screen and (max-width: 1300px) {
   .sponsors-container {
     img {

@@ -42,9 +42,22 @@
       position: relative;
 
       .ic {
+        display: none;
         position: absolute;
         filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.1));
         transition: 0.7s;
+
+        &.w1 {
+          transition: 1s;
+        }
+
+        &.w2 {
+          transition: 1.25s;
+        }
+
+        &.w1 {
+          transition: 1s;
+        }
 
         &.up {
           filter: drop-shadow(0px 20px 13px rgba(0, 0, 23, 0.26));
@@ -53,7 +66,6 @@
         &.ic-1 {
           left: 22%;
           top: 3%;
-          //transform: rotate(-30deg);
         }
 
         &.ic-2 {
@@ -93,7 +105,6 @@
 
         &.ic-9 {
           right: 22%;
-          //transform: rotate(60deg);
         }
 
         &.ic-10 {
