@@ -215,12 +215,14 @@
     .screen .screen-title .remark {
       color: #0057FF; }
   .screen.intro .container {
+    background: url("../images/intro.png") no-repeat center top;
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: relative; }
     .screen.intro .container .ic {
+      display: none;
       position: absolute;
       filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.1));
       transition: 0.7s; }
@@ -1978,20 +1980,6 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 0; }
-
-.parallax-mirror {
-  z-index: unset !important;
-  height: calc(100vh - 128px) !important;
-  padding-top: 128px;
-  max-width: 1440px;
-  width: 100% !important;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-  .parallax-mirror img {
-    height: calc(100vh - 128px) !important;
-    width: unset !important; }
 
 @media screen and (max-width: 1300px) {
   .sponsors-container img {

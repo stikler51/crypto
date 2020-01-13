@@ -34,7 +34,7 @@
 
   &.intro {
     .container {
-      //background: url("../images/intro.png") no-repeat center top;
+      background: url("../images/intro.png") no-repeat center top;
       background-size: contain;
       display: flex;
       justify-content: center;
@@ -42,7 +42,7 @@
       position: relative;
 
       .ic {
-        //display: none;
+        display: none;
         position: absolute;
         filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.1));
         transition: 0.7s;

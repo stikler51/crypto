@@ -46,7 +46,7 @@ function darkTheme() {
   });
 
   darkBlocksTop.forEach((val, ind) => {
-    if ((window.pageYOffset > val - screenHeight / 2) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2)) {
+    if ((window.pageYOffset > val - screenHeight / 2) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2.5)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg');
     }
@@ -57,7 +57,8 @@ function darkTheme() {
 
   window.addEventListener('scroll', () => {
 
-    if (window.pageYOffset < darkBlocksTop[i] - screenHeight / 2) {
+    if (window.pageYOffset < darkBlocksTop[i] - screenHeight / 2.5) {
+      console.log('yo2');
       document.body.classList.remove('dark-theme');
       logo.setAttribute('src', 'images/logo.svg');
 
@@ -65,10 +66,11 @@ function darkTheme() {
         i--;
       }
 
-    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / 2) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / 2)) {
+    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / 2) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / 2.5)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg')
     } else {
+      console.log('yo');
       document.body.classList.remove('dark-theme');
       logo.setAttribute('src', 'images/logo.svg');
 
