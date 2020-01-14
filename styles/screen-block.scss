@@ -561,7 +561,9 @@
   }
 
   &.become-client-page {
+    min-height: 100vh;
     .container {
+      //height: calc(100vh - 128px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -600,6 +602,10 @@
       font-size: 32px;
       line-height: 48px;
       margin: 0 0 16px 0;
+    }
+
+    &.become-client-page {
+      padding-top: 90px;
     }
 
     &.intro {
@@ -962,6 +968,15 @@
 }
 
 @media screen and(max-width: 550px){
+
+  .become-client-page {
+    .partner-form {
+      width: 100%;
+      padding: 0px;
+      border-radius: 0;
+    }
+  }
+
   .become-partner-page {
     .container {
       .left-side,
