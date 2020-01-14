@@ -1412,13 +1412,21 @@
   box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.07);
   border-radius: 24px;
   margin: 0 12px;
-  display: flex !important;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   height: 250px !important;
   position: relative;
   transition: 0.3s; }
+  .media-card a {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    color: #101417;
+    transition: 0.3s;
+    outline: none;
+    height: 100%; }
+    .media-card a:hover {
+      color: #0057FF; }
   .media-card:hover {
     box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.2);
     cursor: grab; }
@@ -1430,12 +1438,6 @@
       font-size: 18px;
       line-height: 32px;
       margin: 0 0 16px 0; }
-      .media-card .media-card-header .card-title a {
-        text-decoration: none;
-        color: #101417;
-        transition: 0.3s; }
-        .media-card .media-card-header .card-title a:hover {
-          color: #0057FF; }
     .media-card .media-card-header .card-date {
       font-weight: 500;
       font-size: 12px;
