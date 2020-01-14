@@ -28,6 +28,11 @@ function darkTheme() {
   let logo = document.body.querySelector('.logo img');
   let screenHeight = window.innerHeight;
 
+  let varK = 2;
+  if (document.body.querySelector('.wallet-screen')) {
+    varK = 2.3;
+  }
+
   if (!darkBlocks.length) {
     return;
   }
@@ -46,7 +51,7 @@ function darkTheme() {
   });
 
   darkBlocksTop.forEach((val, ind) => {
-    if ((window.pageYOffset > val - screenHeight / 2) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2.5)) {
+    if ((window.pageYOffset > val - screenHeight / 1.5) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg');
     }
@@ -57,7 +62,7 @@ function darkTheme() {
 
   window.addEventListener('scroll', () => {
 
-    if (window.pageYOffset < darkBlocksTop[i] - screenHeight / 2) {
+    if (window.pageYOffset < darkBlocksTop[i] - screenHeight / varK) {
       // console.log('yo2');
       document.body.classList.remove('dark-theme');
       logo.setAttribute('src', 'images/logo.svg');
@@ -66,7 +71,7 @@ function darkTheme() {
         i--;
       }
 
-    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / 2) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / 2)) {
+    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / varK) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / varK)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg')
     } else {
