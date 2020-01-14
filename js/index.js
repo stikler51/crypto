@@ -57,8 +57,8 @@ function darkTheme() {
 
   window.addEventListener('scroll', () => {
 
-    if (window.pageYOffset < darkBlocksTop[i] - screenHeight / 2.5) {
-      console.log('yo2');
+    if (window.pageYOffset < darkBlocksTop[i] - screenHeight / 2) {
+      // console.log('yo2');
       document.body.classList.remove('dark-theme');
       logo.setAttribute('src', 'images/logo.svg');
 
@@ -66,11 +66,10 @@ function darkTheme() {
         i--;
       }
 
-    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / 2) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / 2.5)) {
+    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / 2) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / 2)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg')
     } else {
-      console.log('yo');
       document.body.classList.remove('dark-theme');
       logo.setAttribute('src', 'images/logo.svg');
 
@@ -202,7 +201,7 @@ function tabs() {
 }
 
 function mobileMenu() {
-  let langBtn = document.body.querySelector('.lang a');
+  // let langBtn = document.body.querySelector('.lang a');
   // langBtn.addEventListener('click', (e) => {
   //   e.preventDefault();
   //   document.body.querySelector('.lang').classList.toggle('.opened');
@@ -210,7 +209,7 @@ function mobileMenu() {
   //   document.body.addEventListener('click', clickOut);
   // });
 
-  langBtn.addEventListener('click', langHandler);
+  // langBtn.addEventListener('click', langHandler);
   let body = document.body.querySelector('.header');
 
   $('.mobile-menu-btn').click(function(e) {
@@ -218,16 +217,11 @@ function mobileMenu() {
 
     if (!$('.header .buttons .white-btn').hasClass('opened')) {
       document.body.style.overflow = 'hidden';
-      // $('.lang').show();
       $('.header .buttons .white-btn').toggleClass('opened');
 
     } else {
       document.body.style.overflow = 'visible';
       $('.header .buttons .white-btn').toggleClass('opened');
-      // $('.lang').on('transitionend', () => {
-      //   $('.lang').hide();
-      //   $('.header .buttons .white-btn').toggleClass('opened');
-      // })
     }
 
     $('.header').toggleClass('opened');

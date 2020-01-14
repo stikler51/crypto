@@ -41,8 +41,6 @@
       padding-right: 0; }
       .header .container .main-menu-and-buttons .buttons .white-btn {
         transition: margin-right 0.3s; }
-        .header .container .main-menu-and-buttons .buttons .white-btn.opened {
-          margin-right: 64px; }
       .header .container .main-menu-and-buttons .buttons .mobile-menu-btn {
         display: flex; }
       .header .container .main-menu-and-buttons .buttons .lang {
