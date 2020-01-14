@@ -577,6 +577,17 @@
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .screen {
+    &.payment-solution {
+      .screen-title {
+        font-size: 42px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
   .screen {
     padding-top: 32px;
