@@ -1560,7 +1560,6 @@
       max-height: 436px; }
       .wallet-screen.fixed-screen .wallet-screen-img .desc-tab-img img {
         position: absolute;
-        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.12));
         width: calc(100% - 16px);
         height: auto;
         top: 8px;
@@ -1580,7 +1579,6 @@
       position: relative;
       max-height: 475px; }
       .wallet-screen.fixed-screen .wallet-screen-img .mob-tab-img img {
-        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.12));
         position: absolute;
         height: auto;
         width: calc(100% - 16px);
