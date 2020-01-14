@@ -1894,6 +1894,8 @@ body {
       color: white; }
     body.dark-theme .screen .team-name {
       color: white; }
+    body.dark-theme .screen .subtitle {
+      color: white; }
   body.dark-theme .black-block {
     background-color: #101417 !important; }
     body.dark-theme .black-block .block-title {
