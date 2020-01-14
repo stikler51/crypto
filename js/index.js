@@ -51,7 +51,7 @@ function darkTheme() {
   });
 
   darkBlocksTop.forEach((val, ind) => {
-    if ((window.pageYOffset > val - screenHeight / 1.5) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2)) {
+    if ((window.pageYOffset > val - screenHeight / 2) && (window.pageYOffset < val + darkBlocksHeight[ind] - screenHeight / 2)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg');
     }
@@ -62,24 +62,49 @@ function darkTheme() {
 
   window.addEventListener('scroll', () => {
 
+    let val0 = darkBlocks[0].offsetTop;
+    // let height = window.getComputedStyle(block).height;
+    let height0 = darkBlocks[0].offsetHeight;
+
+    darkBlocksTop[0] = val0;
+    darkBlocksHeight[0] = height0;
+
     if (window.pageYOffset < darkBlocksTop[i] - screenHeight / varK) {
       // console.log('yo2');
-      document.body.classList.remove('dark-theme');
-      logo.setAttribute('src', 'images/logo.svg');
-
       if (i > 0) {
         i--;
       }
+
+      console.log(darkBlocksTop[i] + darkBlocksHeight[i]);
+      console.log(darkBlocksTop[i + 1]);
+
+      if (window.pageYOffset < darkBlocksTop[0] - screenHeight / varK) {
+        document.body.classList.remove('dark-theme');
+        logo.setAttribute('src', 'images/logo.svg');
+      }
+
+      // if (!(darkBlocksTop[i] + darkBlocksHeight[i]) === darkBlocksTop[i + 1]) {
+      //   document.body.classList.remove('dark-theme');
+      //   logo.setAttribute('src', 'images/logo.svg');
+      // }
+
+      // document.body.classList.remove('dark-theme');
+      // logo.setAttribute('src', 'images/logo.svg');
 
     } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / varK) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / varK)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg')
     } else {
-      document.body.classList.remove('dark-theme');
-      logo.setAttribute('src', 'images/logo.svg');
-
       if (i < darkBlocksTop.length) {
         i++;
+      }
+
+      console.log(darkBlocksTop[i - 1] + darkBlocksHeight[i - 1]);
+      console.log(darkBlocksTop[i]);
+
+      if (!(darkBlocksTop[i - 1] + darkBlocksHeight[i - 1]) === darkBlocksTop[i]) {
+        document.body.classList.remove('dark-theme');
+        logo.setAttribute('src', 'images/logo.svg');
       }
     }
   });
