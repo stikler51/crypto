@@ -766,6 +766,15 @@
     &.capabilities {
       overflow-x: hidden;
       .container {
+        .tabs {
+          .tabs-list {
+            .tab {
+              &:first-child {
+                margin-left: 12px;
+              }
+            }
+          }
+        }
         .tab-content {
           .tab-img {
             padding-top: 0;
@@ -947,6 +956,13 @@
           flex-wrap: nowrap;
           overflow-x: scroll;
           margin: 0 -24px;
+
+          &:after {
+            content: '';
+            display: block;
+            min-width: 12px;
+            height: 12px;
+          }
         }
 
         .hover-content {

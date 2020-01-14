@@ -646,6 +646,8 @@
       text-align: center; }
     .screen.capabilities {
       overflow-x: hidden; }
+      .screen.capabilities .container .tabs .tabs-list .tab:first-child {
+        margin-left: 12px; }
       .screen.capabilities .container .tab-content .tab-img {
         padding-top: 0; }
         .screen.capabilities .container .tab-content .tab-img .mob-tab-img {
@@ -739,6 +741,11 @@
         flex-wrap: nowrap;
         overflow-x: scroll;
         margin: 0 -24px; }
+        .screen.partners .container .tab-content.active:after {
+          content: '';
+          display: block;
+          min-width: 12px;
+          height: 12px; }
       .screen.partners .container .hover-content {
         padding: 16px; }
         .screen.partners .container .hover-content .hover-content-title {
@@ -1395,6 +1402,8 @@
         flex-shrink: 0;
         padding: 8px 16px;
         margin: 0; }
+        .tabs .tabs-list .tab:first-child {
+          margin-left: 12px; }
         .tabs .tabs-list .tab.active:before {
           content: '';
           position: absolute;
@@ -1795,6 +1804,8 @@
   margin: 0 12px 56px 12px;
   width: calc(25% - 24px);
   transition: 0.5s; }
+  .partner-card:first-child {
+    margin-left: 0px; }
   .partner-card:hover {
     cursor: pointer; }
   .partner-card.become-partner {
@@ -1872,6 +1883,8 @@
     width: 60%;
     padding: 16px;
     flex-shrink: 0; }
+    .partner-card:first-child {
+      margin-left: 24px; }
     .partner-card .partner-logo-container .partner-logo {
       width: 100%; } }
 body {
