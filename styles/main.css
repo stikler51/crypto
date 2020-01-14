@@ -928,7 +928,7 @@
     margin: 0; }
   .badge:nth-child(1) {
     position: absolute;
-    left: 0;
+    left: 25px;
     top: 0;
     box-shadow: 0px 20px 25px rgba(0, 0, 23, 0.16), 0px 10px 10px rgba(0, 0, 0, 0.04); }
   .badge:nth-child(2) {
@@ -1023,8 +1023,13 @@
 
 @media screen and (max-width: 991px) {
   .team-card {
-    width: 40%; }
-    .team-card .team-photo {
+    width: 40%;
+    flex-shrink: 0; }
+    .team-card:hover .photo-container:before {
+      padding-top: 100%; }
+    .team-card:hover .photo-container .team-photo {
+      top: 0; }
+    .team-card .photo-container {
       width: 35vw; }
     .team-card:last-child {
       padding-right: 24px; }
@@ -1032,8 +1037,8 @@
       padding-left: 12px; } }
 @media screen and (max-width: 550px) {
   .team-card {
-    width: 100%; }
-    .team-card .team-photo {
+    width: 80%; }
+    .team-card .photo-container {
       width: 80vw; } }
 .become-partner {
   background: #101417; }

@@ -85,7 +85,20 @@
 @media screen and(max-width: 991px) {
   .team-card {
     width: 40%;
-    .team-photo {
+    flex-shrink: 0;
+
+    &:hover {
+      .photo-container {
+        &:before {
+          padding-top: 100%
+        }
+
+        .team-photo {
+          top: 0;
+        }
+      }
+    }
+    .photo-container {
       width: 35vw;
     }
 
@@ -101,8 +114,8 @@
 
 @media screen and (max-width: 550px) {
   .team-card {
-    width: 100%;
-    .team-photo {
+    width: 80%;
+    .photo-container {
       width: 80vw;
     }
   }
