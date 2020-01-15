@@ -1508,13 +1508,6 @@
       display: flex;
       justify-content: center;
       align-items: center; }
-      .black-block .container .buttons .white-btn a {
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        color: white;
-        transition: 0.3s; }
-        .black-block .container .buttons .white-btn a:hover {
-          border-color: #0057FF; }
 
 @media screen and (max-width: 550px) {
   .black-block {
@@ -1911,6 +1904,13 @@ body {
       color: white; }
     body.dark-theme .screen .subtitle {
       color: white; }
+    body.dark-theme .screen .white-btn a {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: white;
+      transition: 0.3s; }
+      body.dark-theme .screen .white-btn a:hover {
+        border-color: #0057FF; }
   body.dark-theme .black-block {
     background-color: #101417 !important; }
     body.dark-theme .black-block .block-title {

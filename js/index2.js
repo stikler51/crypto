@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
     fixedScreen();
-    // iconAnimation();
+    iconAnimation();
     setTeamCardHeight();
   } else {
     mobileMenu();
@@ -28,9 +28,11 @@ function darkTheme() {
   let logo = document.body.querySelector('.logo img');
   let screenHeight = window.innerHeight;
 
-  let varK = 2;
+  let varK = 1.2;
+  let varK2 = 2;
   if (document.body.querySelector('.wallet-screen')) {
     varK = 2.3;
+    varK2 = 2.3;
   }
 
   if (!darkBlocks.length) {
@@ -75,10 +77,10 @@ function darkTheme() {
         i--;
       }
 
-      console.log(darkBlocksTop[i] + darkBlocksHeight[i]);
-      console.log(darkBlocksTop[i + 1]);
+      // console.log(darkBlocksTop[i] + darkBlocksHeight[i]);
+      // console.log(darkBlocksTop[i + 1]);
 
-      if (window.pageYOffset < darkBlocksTop[0] - screenHeight / varK) {
+      if (window.pageYOffset < darkBlocksTop[0] - screenHeight / varK2) {
         document.body.classList.remove('dark-theme');
         logo.setAttribute('src', 'images/logo.svg');
       }
@@ -91,7 +93,7 @@ function darkTheme() {
       // document.body.classList.remove('dark-theme');
       // logo.setAttribute('src', 'images/logo.svg');
 
-    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / varK) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / varK)) {
+    } else if ((window.pageYOffset > darkBlocksTop[i] - screenHeight / varK) && (window.pageYOffset < darkBlocksTop[i] + darkBlocksHeight[i] - screenHeight / varK2)) {
       document.body.classList.add('dark-theme');
       logo.setAttribute('src', 'images/logo-dark.svg')
     } else {
@@ -99,8 +101,8 @@ function darkTheme() {
         i++;
       }
 
-      console.log(darkBlocksTop[i - 1] + darkBlocksHeight[i - 1]);
-      console.log(darkBlocksTop[i]);
+      // console.log(darkBlocksTop[i - 1] + darkBlocksHeight[i - 1]);
+      // console.log(darkBlocksTop[i]);
 
       if (!(darkBlocksTop[i - 1] + darkBlocksHeight[i - 1]) === darkBlocksTop[i]) {
         document.body.classList.remove('dark-theme');
