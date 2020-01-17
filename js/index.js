@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
     fixedScreen();
-    // iconAnimation();
+    iconAnimation();
     setTeamCardHeight();
   } else {
     mobileMenu();
@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
   fixPartnersCardHeight();
 
   tabs();
-
+  
   cards();
 
   darkTheme();
@@ -360,8 +360,14 @@ function fixedScreen() {
   let fixed = document.body.querySelector('.fixed-screen');
   let screenHeight = window.innerHeight;
 
+
   if (!fixed) {
     return
+  }
+
+  if (window.innerWidth < 1366) {
+    let screens = document.body.querySelectorAll('.about-us-screen');
+    screenHeight = screens[2].querySelector('.container').offsetTop - 128;
   }
 
   if(fixed.classList.contains('advantages')) {

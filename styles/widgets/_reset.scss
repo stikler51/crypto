@@ -1,0 +1,21 @@
+.crm-webform-iframe {
+  &.page-theme-transparent {
+    background-color: transparent;
+
+    .content {
+      background: transparent;
+    }
+  }
+
+  .crm-webform-header-container {
+    border: 0;
+  }
+
+  .crm-webform-default {
+    border: 0;
+  }
+
+  .crm-webform-header-container {
+    background: transparent;
+  }
+}

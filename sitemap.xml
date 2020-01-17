@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://cryptoprocessing.com</loc>
+  <lastmod>2020-01-14T20:17:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://cryptoprocessing.com/crypto-payment-processing.html</loc>
+  <lastmod>2020-01-14T20:17:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cryptoprocessing.com/wallet.html</loc>
+  <lastmod>2020-01-14T20:17:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cryptoprocessing.com/about-us.html</loc>
+  <lastmod>2020-01-14T20:17:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cryptoprocessing.com/partners.html</loc>
+  <lastmod>2020-01-14T20:17:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cryptoprocessing.com/affiliate-program.html</loc>
+  <lastmod>2020-01-14T20:45:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cryptoprocessing.com/request-a-quote.html</loc>
+  <lastmod>2020-01-14T20:45:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cryptoprocessing.com/waiting-list.html</loc>
+  <lastmod>2020-01-14T20:45:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
