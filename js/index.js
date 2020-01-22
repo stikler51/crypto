@@ -1,5 +1,7 @@
 window.addEventListener('load', () => {
 
+  getIP();
+
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
     fixedScreen();
@@ -16,7 +18,7 @@ window.addEventListener('load', () => {
   fixPartnersCardHeight();
 
   tabs();
-  
+
   cards();
 
   darkTheme();
@@ -110,6 +112,7 @@ function darkTheme() {
   });
 
 }
+
 
 function fixPartnersCardHeight() {
   let partnersCards = document.body.querySelectorAll('.active .partner-card');
@@ -506,6 +509,12 @@ function iconAnimation() {
   }, 500)
 }
 
+
+  $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+    function(json) {
+      alert("My public IP address is: ", json.ip);
+    }
+  );
 
 
 
