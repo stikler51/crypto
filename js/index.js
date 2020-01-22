@@ -1,6 +1,12 @@
 window.addEventListener('load', () => {
 
-  getIP();
+
+    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+      function(json) {
+        alert("My public IP address is: ", json.ip);
+      }
+    );
+
 
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
@@ -508,14 +514,6 @@ function iconAnimation() {
     }, 1000);
   }, 500)
 }
-
-
-  $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-    function(json) {
-      alert("My public IP address is: ", json.ip);
-    }
-  );
-
 
 
 $('.customers-slider').slick({
