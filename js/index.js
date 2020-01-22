@@ -1,13 +1,5 @@
 window.addEventListener('load', () => {
 
-
-    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-      function(json) {
-        alert("My public IP address is: ", json.ip);
-      }
-    );
-
-
   if (window.innerWidth > 991) {
     setScreensBlocksHigh();
     fixedScreen();
